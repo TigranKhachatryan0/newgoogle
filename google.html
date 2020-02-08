@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>TheGrooglses</title>
   <link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
   <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
+	<br><br><br><br>
 	<h1 align="center" style="font-family: sans-serif; font-size: 200%;">TheGrooglses</p>
 
 <div class="mdc-text-field mdc-text-field--fullwidth">
@@ -14,18 +16,29 @@
 </div>
 <br>
 <br>
-<br>
 <button class="mdc-fab mdc-fab--extended" onclick="Search()">
   <div class="mdc-fab__ripple"></div>
   <span class="material-icons mdc-fab__icon">search</span>
   <span class="mdc-fab__label">Search</span>
 </button>
+<button class="mdc-fab mdc-fab--extended" onclick="ImFeelingLucky()">
+  <div class="mdc-fab__ripple"></div>
+  <span class="material-icons mdc-fab__icon">insert_emoticon</span>
+  <span class="mdc-fab__label">I'm feeling Lucky</span>
+</button>
+
 <script>
 function Search()
 {
   var textarea = document.getElementById("search");
   var value = textarea.value;
   window.location = "https://google.com/search?q=" + value;
+}
+
+function ImFeelingLucky(){
+  var textarea = document.getElementById("search");
+  var value = textarea.value;
+  window.location = "https://google.com/search?q=" + value + "&btnI";
 }
 </script>
 </body>
