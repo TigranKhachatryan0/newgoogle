@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<p>Google</p>
+<textarea id="information" placeholder="Search Google"></textarea>
+<button onclick="Search()">Search</button>
+<script>
+function Search()
+{
+  var textarea = document.getElementById("information");
+  var value = textarea.value;
+  window.location = "https://google.com/search?q=" + value;
+}
+</script>
+</body>
+</html>
