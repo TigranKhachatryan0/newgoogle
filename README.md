@@ -21,5 +21,7 @@ Added a progress bar for slow internet users and
 Made Enter button execute the search function 
 
 # Fifth release
-Dark mode
-Added license information
+Dark mode, added license information
+
+# Sixth release
+Made pages load faster, but the files are noticably heavier
